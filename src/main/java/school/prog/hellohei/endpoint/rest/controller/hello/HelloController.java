@@ -1,14 +1,14 @@
 package school.prog.hellohei.endpoint.rest.controller.hello;
 
+import jakarta.mail.internet.InternetAddress;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import jakarta.mail.internet.InternetAddress;
 import school.prog.hellohei.PojaGenerated;
 import school.prog.hellohei.mail.Email;
 import school.prog.hellohei.mail.Mailer;
