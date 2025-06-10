@@ -2,15 +2,14 @@ package school.prog.hellohei.endpoint.rest.service.hello;
 
 import static java.io.File.createTempFile;
 
-import school.prog.hellohei.file.bucket.BucketComponent;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Duration;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
-
 import org.springframework.stereotype.Service;
+import school.prog.hellohei.file.bucket.BucketComponent;
 
 @Service
 @AllArgsConstructor
