@@ -1,4 +1,4 @@
-package school.prog.hellohei.endpoint.rest.service.hello;
+package school.prog.hellohei.service.hello;
 
 import static java.io.File.createTempFile;
 
@@ -14,6 +14,7 @@ import school.prog.hellohei.file.bucket.BucketComponent;
 @Service
 @AllArgsConstructor
 public class HelloWorldService {
+
   private final BucketComponent bucketComponent;
 
   @SneakyThrows
