@@ -5,11 +5,10 @@ import java.util.List;
 import java.util.function.Consumer;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
+import org.springframework.stereotype.Service;
 import school.prog.hellohei.endpoint.event.model.EmailUpdateTriggered;
 import school.prog.hellohei.mail.Email;
 import school.prog.hellohei.mail.Mailer;
-
-import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
