@@ -1,6 +1,5 @@
 package school.prog.hellohei.service.art;
 
-
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.stereotype.Service;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class ArtService {
 
   @SneakyThrows
-  public Integer add(Integer a, Integer b) {
+  public Long add(Long a, Long b) {
     var sum = a + b;
     return sum;
   }

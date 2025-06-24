@@ -20,7 +20,7 @@ public class ArtController {
       new ResponseEntity<>("KO", HttpStatus.INTERNAL_SERVER_ERROR);
 
   @GetMapping("/add")
-  public Integer helloWorld(@RequestParam Integer a, @RequestParam Integer b) {
+  public Long helloWorld(@RequestParam Long a, @RequestParam Long b) {
     return service.add(a, b);
   }
 }
