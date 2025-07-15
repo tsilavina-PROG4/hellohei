@@ -18,8 +18,12 @@ public class FacadeIT {
   @DynamicPropertySource
   static void configureProperties(DynamicPropertyRegistry registry) {
 
+    new EventConf().configureProperties(registry);
     new BucketConf().configureProperties(registry);
     new EmailConf().configureProperties(registry);
+
+    registry.add("sentry.dsn", () -> "https://public@sentry.example.com/1");
+    registry.add("sentry.environment", () -> "dummy");
 
     try {
       var envConfClazz = Class.forName("school.prog.hellohei.conf.EnvConf");
