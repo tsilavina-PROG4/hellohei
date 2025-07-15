@@ -146,8 +146,12 @@ dependencies {
     testImplementation 'org.testcontainers:junit-jupiter:1.19.1'
     testImplementation 'org.junit-pioneer:junit-pioneer:2.2.0'
 
-implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
+
+    implementation 'io.sentry:sentry-logback:7.6.0'
+    implementation 'io.sentry:sentry-spring-boot-starter-jakarta:7.4.0'
+    implementation 'com.amazonaws:aws-lambda-java-core:1.2.2'
 implementation 'com.amazonaws:aws-lambda-java-events:3.11.1'
 
+    
 
 }
