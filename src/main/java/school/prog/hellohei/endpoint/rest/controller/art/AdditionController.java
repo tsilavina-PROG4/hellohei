@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdditionController {
   @GetMapping("/add")
   public long addition(@RequestParam long a, @RequestParam long b) {
-
+    Sentry.logger().info("A simple log message");
+    Sentry.logger().error("A %s log message", "formatted");
     try {
       throw new Exception("This is a test.");
     } catch (Exception e) {
